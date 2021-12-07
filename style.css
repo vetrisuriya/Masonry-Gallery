@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 700px;
+  height: 100%;
+  margin: 0px auto;
+}
+body main {
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5% 0px 0px;
+}
+body main .section-profile {
+  height: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 8px;
+}
+body main .section-profile .profile-image img {
+  width: 100px;
+  border-radius: 10px;
+}
+body main .section-profile .profile-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+body main .section-profile .profile-location {
+  font-size: 10px;
+  color: #A9A9A9;
+}
+body main .section-profile .profile-stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  margin-top: 5px;
+}
+body main .section-profile .profile-stat div {
+  width: 80px;
+  border-radius: 10px;
+  background: #E5E5E5;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+body main .section-profile .profile-stat div h5 {
+  font-size: 12px;
+  color: #4E5150;
+}
+body main .section-profile .profile-stat div p {
+  font-size: 10px;
+  color: #A9A9A9;
+}
+body main .section-gallery > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .section-gallery > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+body main .section-gallery {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  padding: 30px 0px;
+}
+body main .section-gallery .wide {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+body main .section-gallery .tall {
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+}
+body footer {
+  height: 60px;
+  color: #BDBDBD;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+}
+body footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    width: 95%;
+  }
+  body main .section-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    grid-auto-rows: 100px;
+    padding: 30px 0px 0px;
+  }
+  body footer {
+    height: 60px;
+  }
+}
